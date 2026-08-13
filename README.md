@@ -6,9 +6,8 @@ The Student Task Manager is a web application designed to help students organize
 
 The purpose of creating this software was to strengthen my understanding of web development, user interface design, state management, and local data persistence.
 
-## **Software Demo Video:**
-
-[Video demonstration link will be added here](https://youtu.be/xZucBj2pmgc)
+## **Software Demo Video:**[Video demonstration link will be added here]
+[youtube video](https://youtu.be/xZucBj2pmgc)
 
 ## Live Demo
 
