@@ -32,12 +32,7 @@ function initDashboard() {
  * Sets up event listeners for dashboard buttons.
  */
 function setupDashboardEventListeners() {
-  const loadSampleBtn = document.getElementById("load-sample-btn");
   const clearAllBtn = document.getElementById("clear-all-btn");
-
-  if (loadSampleBtn) {
-    loadSampleBtn.addEventListener("click", handleLoadSampleData);
-  }
 
   if (clearAllBtn) {
     clearAllBtn.addEventListener("click", handleClearAllData);
@@ -233,32 +228,8 @@ function createDashboardTaskElement(task) {
 // ============================================
 // SAMPLE DATA FUNCTIONALITY
 // ============================================
-
-/**
- * Handles loading sample/demo tasks.
- */
-function handleLoadSampleData() {
-  const allTasks = getAllTasks();
-
-  if (allTasks.length > 0) {
-    if (
-      !showConfirmDialog(
-        "This will add sample tasks to your existing tasks. Continue?",
-      )
-    ) {
-      return;
-    }
-  }
-
-  try {
-    loadSampleTasks();
-    updateAllDashboardContent();
-    showNotification("Sample data loaded successfully!", "success");
-  } catch (error) {
-    console.error("Error loading sample data:", error);
-    showNotification("Error loading sample data. Please try again.", "error");
-  }
-}
+// DATA MANAGEMENT
+// ============================================
 
 /**
  * Handles clearing all tasks with a confirmation dialog.
