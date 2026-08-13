@@ -1,0 +1,44 @@
+# IDE and Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Node (if using local development tools)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Python (if using Python for local server)
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+env/
+
+# OS specific
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Build and dist directories (if any)
+dist/
+build/
+
+# Environment files (sensitive data)
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+
+# Don't ignore these project files
+!.gitignore
+!README.md
+!images/
+!images/README.txt
